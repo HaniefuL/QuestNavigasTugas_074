@@ -67,5 +67,6 @@ fun TampilData(navController: NavHostController){
                     }
                 }
             }
+            Spacer(modifier = Modifier.height(20.dp))
         }
 }
