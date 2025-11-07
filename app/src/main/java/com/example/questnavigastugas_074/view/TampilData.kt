@@ -2,7 +2,9 @@ package com.example.questnavigastugas_074.view
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -37,5 +39,6 @@ fun TampilData(navController: NavHostController){
                 fontWeight = FontWeight.Bold,
                 color = Color.White
             )
+            Spacer(modifier = Modifier.height(20.dp))
         }
 }
