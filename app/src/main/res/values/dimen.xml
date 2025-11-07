@@ -12,4 +12,12 @@
     <string name="kembali">Kembali</string>
     <string name="FormulirPendaftaran">Formulir Pendaftaran</string>
     <string name="Submit">Submit</string>
+
+    <string-array name="data_peserta">
+        <item>Nama Lengkap: Hanieful Geofarry Juneo Syahyana</item>
+        <item>Jenis Kelamin: Laki-Laki</item>
+        <item>Status Perkawinan: Lajang</item>
+        <item>Alamat: Blora</item>
+    </string-array>
+
 </resources>
