@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Surface
@@ -39,7 +41,7 @@ fun TampilData(navController: NavHostController){
                 .fillMaxSize()
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
-        ){
+        ) {
             Text(
                 text = "List Daftar Peserta",
                 fontSize = 24.sp,
@@ -53,7 +55,7 @@ fun TampilData(navController: NavHostController){
                     .fillMaxWidth()
                     .weight(1f), // Agar LazyColumn mengisi ruang yang tersedia
                 verticalArrangement = Arrangement.spacedBy(12.dp)
-            ){
+            ) {
                 items(pesertaList) { peserta ->
                     Card(
                         modifier = Modifier
@@ -68,5 +70,26 @@ fun TampilData(navController: NavHostController){
                 }
             }
             Spacer(modifier = Modifier.height(20.dp))
+
+            Button(
+                onClick = { navController.navigate("welcome") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 32.dp)
+            ) {
+                Text("Beranda")
+            }
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Button(
+                onClick = { navController.navigate("formulir") },
+                colors = ButtonDefaults.buttonColors(containerColor = Color.White),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 32.dp)
+            ) {
+                Text("Formulir Pendaftaran", color = Color(0xFF6200EE))
+            }
         }
+    }
 }
