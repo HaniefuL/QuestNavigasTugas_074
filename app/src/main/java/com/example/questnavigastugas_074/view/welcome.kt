@@ -20,9 +20,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.questnavigastugas_074.R
 
 @Composable
 fun WelcomeScreen(
+    modifier: Modifier,
     onTampilDataClicked: () -> Unit,
     onFormulirPendaftaranClicked: () -> Unit
 ) {

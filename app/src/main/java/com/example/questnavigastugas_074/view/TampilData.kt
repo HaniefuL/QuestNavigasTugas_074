@@ -26,15 +26,17 @@ import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
+import com.example.questnavigastugas_074.R
 
 @Composable
-fun TampilData(navController: NavHostController){
+fun TampilData(navController: NavHostController, modifier: Modifier){
     val pesertaList = stringArrayResource(id = R.array.data_peserta)
     val gradient = Brush.verticalGradient(
         colors = listOf(Color(0xFF313647), Color(0xFF1A3D64))
     )
 
-    Surface(modifier = Modifier.fillMaxSize()) {
+    Surface(modifier = modifier) {
         Column(
             modifier = Modifier
                 .background(gradient)
